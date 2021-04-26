@@ -4,6 +4,9 @@ class CategoriaDAO
 {
     private $conexao;
 
+    /**
+     * Faz as operações CRUD para a entidade Categoria
+     */
     public function __construct()
     {
         include 'MySQL.php';
@@ -12,6 +15,9 @@ class CategoriaDAO
     }
 
 
+    /**
+     * Insere uma nova categoria de produto.
+     */
     public function insert(array $dados_categoria)
     {
         try {
@@ -28,6 +34,10 @@ class CategoriaDAO
         }
     }
 
+
+    /**
+     * 
+     */
     public function update($dados_categoria)
     {
         try {
@@ -46,6 +56,10 @@ class CategoriaDAO
         
     }
 
+
+    /**
+     * 
+     */
     public function delete($id)
     {
         try {
@@ -63,6 +77,10 @@ class CategoriaDAO
         }        
     }
 
+
+    /**
+     * 
+     */
     public function getById($id)
     {
         try {
@@ -80,6 +98,10 @@ class CategoriaDAO
         }        
     }
 
+
+    /**
+     * 
+     */
     public function getAllRows()
     {
         try {
